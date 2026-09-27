@@ -1,0 +1,222 @@
+/* Navbar */
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55px;
+    padding-top: 20px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;         
+    left: 0;
+    z-index: 1000;
+}
+
+.logo_name {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 30px;
+}
+
+.pages a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.pages a:hover {
+    color: #002D37;
+}
+
+
+#login {
+    display: inline-block;  
+    width: 100px;
+    height: 35px;
+    line-height: 35px;    
+    text-align: center;
+    text-decoration: none;  
+    margin-right: 25px;
+    background-color: #002D37;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#login:hover {
+    border: 2px solid #002D37;
+    background-color: white;
+    color: #002D37;
+}
+
+
+
+.pages {
+    margin-top: 5px;
+}
+
+/* Hero Section */
+
+.Hero_Sec {
+    position: relative;
+    display: inline-block;
+    background-image: url("bg5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+    height: 600px;
+    justify-content: space-between;
+
+}
+
+.text {
+    float: left;
+    margin-left: 150px;
+    width: 550px;
+    top: 100px;
+    align-content: center;
+}
+
+.white {
+    font-size: 70px;
+    display: flex;
+    color: white;
+    font-family:cursive;
+    margin-bottom: 0px;
+}
+
+.green {
+    display: flex;
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #002D37;
+    font-style: oblique;
+}
+
+.describe {
+    color: white;
+}
+
+button {
+    width: 200px;
+    height: 35px;
+    margin-right: 25px;
+    background-color: #002D37;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+.images img {
+    border: 5px solid white;
+}
+
+/* Footer */
+
+footer {
+    background-color: #002D37
+}
+
+.contents{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.contents div {
+    width: 100px;
+}
+
+hr {
+    color: white;
+}
+
+.ending {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-content: center;
+}
+
+.PTC {
+    display: flex;
+}
+
+.PTC p {
+    margin-right: 30px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.foot_main {
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    header {
+        background-color: white;
+        height: 250px;
+    }
+    .nav_bar {
+        display: block;
+        width: 480px;
+        position: static;
+    }
+    
+    .logo_name img {
+        margin-left: 150px;
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: static;
+    }
+
+    .Hero_Sec {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+    }
+
+    .Hero_Sec .text p{
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .Hero_Sec .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 95px;
+        margin-bottom: 20px;
+    }
+}   

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyara</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body {
+           background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("background_img.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Using flex box */
+
+        /* .options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: center;
+            margin-bottom: 40px;
+        } */
+
+        /* Using CSS Grid */
+
+        .bricks {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+
+        .bricks > div p{
+            height: 250px;
+            width: 600px;
+        }
+
+        .bricks div img {
+            border-radius: 20px;
+        }
+
+        .bricks div p {
+            background-color: azure;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 20px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .imgs {
+            margin-bottom: 20px;
+            margin-right: 50px;
+        }
+
+        .sub_title {
+            color: Black;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+        
+        .sub_text {
+            color: grey;
+            font-size: 15px;
+        }
+        
+        .bottom_text {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .bottom_text p{
+            color: rgb(13, 169, 13);
+        }
+
+        #explore {
+            color: #002D37;
+            background-color: #002D37;
+            border-radius: 10px;
+        }
+
+        .hero_header {
+            width: 1300px;
+            text-align: center;
+            padding-bottom: 40px;
+            background-color: #002D37;
+            height: 300px;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            margin-top: 90px;  
+            
+        }
+
+        .hero_header .big {
+            font-size: 60px;
+            font-style: oblique;
+            color: beige;
+        }
+
+        .hero_header .small {
+            font-size: 30px;
+            color: white;
+        }
+
+        #explore {
+            color: #002D37;
+            border: 1px solid #002D37;
+            border-radius: 10px;
+            background: transparent;
+            padding: 6px 16px; /* optional, for better spacing */
+        }
+
+        @media (max-width: 480px){
+            .hero_header {
+                width: 100%;
+            }
+
+            .bricks {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                margin-left: 10px;
+            }
+
+            .imgs img {
+                height: 180px;
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+
+            .bricks > div p{
+                height: 300px;
+                width:400px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav_bar">
+            <div class="logo_name">
+                <img src="logo.png" alt="Voyara" width="100px" height="35px">
+            </div>
+            <div class="pages">
+                <a href="index.html">Home</a>
+                <a href="destination.html">Destinations</a>
+                <a href="contact_us.html">Contact Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="sign_up.html">Sign Up</a>
+                <a href="log_in.html" id="login">Log In</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+     <div class="hero_header">
+        <p class="big">The Voyara Blog</p>
+        <p class="small">Travel Trips, Budget Travel, Food & Culture</p>
+     </div>
+     
+     <div class="blog_blocks">
+        <div class="bricks">
+            <div>
+                <div class="imgs"><img src="blog1.jpg" alt="blog1" height="245px"></div>
+                <div class="imgs"><img src="blog2.jpg" alt="blog2" height="225px"></div>
+            </div>
+            <div><p> <b>Discover Coastal Escapes</b><br><br> Every beach has its own story, waiting to be discovered beyond the familiar sights and crowded tourist spots. From quiet stretches of golden sand surrounded by lush green landscapes to vibrant coastlines filled with local culture and seaside activities, coastal destinations offer something for every kind of traveller. Take a peaceful walk along the shore, explore hidden coves, admire breathtaking ocean views, or simply spend the day watching the waves meet the sand. The beauty of a beach lies not only in its scenery but also in the feeling of freedom and calm that comes with being close to the sea. Whether you are planning a weekend getaway or a longer holiday, exploring new coastal destinations can turn an ordinary trip into an unforgettable experience filled with beautiful places, new discoveries, and memories worth keeping.</p></div>
+        </div>
+        <hr>
+        <div class="bricks">
+            <div>
+                <div class="imgs"><img src="blog3.jpg" alt="blog3" height="240px"></div>
+                <div class="imgs"><img src="blog4.jpg" alt="blog4" height="225px"></div>
+            </div>
+            <div><p> <b>Adventure by the Sea</b><br><br>For those who love excitement, the beach is the perfect place to turn a vacation into an adventure. The clear blue waters and beautiful coastlines provide countless opportunities to explore, from snorkeling and swimming to kayaking, boating, scuba diving, and other thrilling water activities. Discover the colorful world beneath the surface, feel the excitement of riding across the waves, or spend an afternoon exploring the coastline from the water. Even a simple boat ride can offer a completely different view of the surrounding landscape and make you appreciate the beauty of the ocean. Whether you are an experienced adventurer or trying a water activity for the first time, the beach offers a chance to step outside your comfort zone, experience something new, and create unforgettable moments with friends and family.</p></div>
+        </div>
+        <hr>
+        <div class="bricks">
+            <div>
+                <div class="imgs"><img src="blog5.jpg" alt="blog5" height="215px"></div>
+                <div class="imgs"><img src="blog6.jpg" alt="blog6" height="225px"></div>
+            </div>
+            <div><p> <b>Relax, Unwind, and Reconnect</b><br><br>Not every beach trip needs to be filled with activities and adventure. Sometimes, the best way to enjoy the coast is to simply slow down and let yourself relax. Feel the warmth of the sand beneath your feet, listen to the gentle sound of the waves, breathe in the fresh sea air, and watch the colors of the sky change as the sun begins to set. A peaceful beach can provide the perfect escape from busy schedules and everyday routines, giving you time to reconnect with yourself and the people around you. Whether you are enjoying a quiet morning by the water, sharing conversations with loved ones, or watching a beautiful sunset after a long day of exploring, these simple moments often become the memories you remember most. A visit to the beach is not just about seeing a beautiful destination; it is about finding time to pause, enjoy the present, and take a little piece of that calm feeling home with you.</p></div>
+        </div>
+     </div>
+        
+
+    <!-- Footer -->
+     <footer>
+        <div class="contents">
+            <div>
+                <img src="logo.png" alt="Voyara" width="100px" height="35px" style="background-color: white; margin-top: 10px;">
+                <p>Making every trip unforgettable, one destination at a time</p>
+            </div>
+            <div>
+                <p class="foot_main">Quick links</p>
+                <a class="links" href="index.html">Home</a>
+                <a class="links" class="links" href="destination.html">Destinations</a>
+                <a class="links" href="blog.html">Blog</a>
+                <a class="links" href="contact_us.html">Contact us</a>
+                <a class="links" href="sign_up.html">Sign up</a>
+            </div>
+            <div>
+                <p class="foot_main">Support</p>
+                <p>FAQs</p>
+                <p>Booking terms</p>
+                <p>Cancellation policy</p>
+                <p>Privacy policy</p>
+            </div>
+            <div>
+                <p class="foot_main">Stay updated</p>
+                <p>Get travel deals in your inbox</p>
+                <p>hello@voyara.com</p>
+                <p>+91 9876543210</p>
+            </div>
+        </div>
+        <hr>
+        <div class="ending">
+            <div><p>© 2026 Voyara.All rights reserved.</p></div>
+            <div class="PTC">
+                <p>Privacy</p>
+                <p>Terms</p>
+                <p>Cookies</p>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>

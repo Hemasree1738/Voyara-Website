@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyara</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+ 
+        body {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("background_img.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+        }
+ 
+        /* Using flex box */
+ 
+        /* .options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: center;
+            margin-bottom: 40px;
+        } */
+ 
+        /* Using CSS Grid */
+ 
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+        }
+ 
+ 
+        .single_option {
+            width: 350px;
+            border: 2px solid rgb(147, 142, 142);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: whitesmoke;
+        }
+ 
+        .single_option img {
+            border-radius: 10px;
+        }
+ 
+        .sub_title {
+            color: Black;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+        
+        .sub_text {
+            color: grey;
+            font-size: 15px;
+        }
+        
+        .bottom_text {
+            display: flex;
+            justify-content: space-evenly;
+        }
+ 
+        .bottom_text p{
+            color: rgb(13, 169, 13);
+        }
+ 
+        .hero_header {
+            width: 1300px;
+            text-align: center;
+            padding-bottom: 40px;
+            background-color: #002D37;
+            height: 300px;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            margin-top: 90px;  
+            
+        }
+ 
+        .hero_header .big {
+            font-size: 60px;
+            font-style: oblique;
+            color: beige;
+        }
+ 
+        .hero_header .small {
+            font-size: 30px;
+            color: white;
+        }
+ 
+        .explore_btn {
+            color: #002D37;
+            border: 1px solid #002D37;
+            border-radius: 10px;
+            background: transparent;
+            padding: 6px 16px;
+        }
+ 
+        .single_option_text {
+            margin-left: 5px;
+        }
+ 
+        .explore_btn:hover {
+            background-color: #002D37;
+            color: white;
+        }
+ 
+        @media (max-width: 480px) {
+            .options {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-left: 55px;
+            }
+ 
+            .hero_header {
+                width: 100%;
+            }
+        }
+ 
+    </style>
+</head>
+<body>
+ 
+    <!-- Navbar -->
+    <header>
+        <div class="nav_bar">
+            <div class="logo_name">
+                <img src="logo.png" alt="Voyara" width="100px" height="35px">
+            </div>
+            <div class="pages">
+                <a href="index.html">Home</a>
+                <a href="destination.html">Destinations</a>
+                <a href="contact_us.html">Contact Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="sign_up.html">Sign Up</a>
+                <a href="log_in.html" id="login">Log In</a>
+            </div>
+        </div>
+    </header>
+    
+ 
+    <!-- Main -->
+     <div class="hero_header">
+        <p class="big">Explore Destinations</p>
+        <p class="small">Find your next unforgettable trip</p>
+     </div>
+     <div class="options">
+        <div class="single_option">
+            <div class="image"><img src="radhanagar_beach.jpg" alt="image1" width="349px" height="150px"></div>
+            <div class="single_option_text">
+                <div class="top_text">
+                    <p class="sub_title">Radhanagar Beach, Havelock Island</p>
+                    <p class="sub_text">Powdery white sands, bright turquoise waters, and lush forest canopy.</p>
+                </div>
+                <div class="bottom_text">
+                    <p>From ₹9,500</p>
+                    <button class="explore_btn">Explore</button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+ 
+        <div class="single_option">
+            <div class="image"><img src="varkala_beach.jpg" alt="image1" width="349px" height="150px"></div>
+            <div class="single_option_text">
+                <div class="top_text">
+                    <p class="sub_title">Varkala Beach, Kerala</p>
+                    <p class="sub_text">Majestic red laterite cliffs immediately bordering the Arabian Sea.</p>
+                </div>
+                <div class="bottom_text">
+                    <p>From ₹950</p>
+                    <button class="explore_btn">Explore</button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+ 
+        <div class="single_option">
+            <div class="image"><img src="palolem_beach.jpg" alt="image1" width="349px" height="150px"></div>
+            <div class="single_option_text">
+                <div class="top_text">
+                    <p class="sub_title">Palolem Beach, South Goa</p>
+                    <p class="sub_text">Postcard-perfect scenic crescent bay lined with leaning coconut palms.</p>
+                </div>
+                <div class="bottom_text">
+                    <p>From ₹4,500</p>
+                    <button class="explore_btn">Explore</button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+ 
+        <div class="single_option">
+            <div class="image"><img src="om_beach.jpg" alt="image1" width="349px" height="150px"></div>
+            <div class="single_option_text">
+                <div class="top_text">
+                    <p class="sub_title">Om Beach, Gokarna</p>
+                    <p class="sub_text">Two intersecting crescent bays forming a natural spiritual 'Om' symbol shape.</p>
+                </div>
+                <div class="bottom_text">
+                    <p>From ₹1,400</p>
+                    <button class="explore_btn">Explore</button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+ 
+        <div class="single_option">
+            <div class="image"><img src="mahabalipuram_beach.jpg" alt="image1" width="349px" height="150px"></div>
+            <div class="single_option_text">
+                <div class="top_text">
+                    <p class="sub_title">Shore Beach, Mahabalipuram</p>
+                    <p class="sub_text">Golden sands featuring UNESCO world heritage rock-cut shore temples.</p>
+                </div>
+                <div class="bottom_text">
+                    <p>From ₹150</p>
+                    <button class="explore_btn">Explore</button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+ 
+        <div class="single_option">
+            <div class="image"><img src="eden_beach.jpg" alt="image1" width="349px" height="150px"></div>
+            <div class="single_option_text">
+                <div class="top_text">
+                    <p class="sub_title">Eden Beach, Pondicherry</p>
+                    <p class="sub_text">Pristine international Blue Flag certified beach with peaceful backwaters.</p>
+                </div>
+                <div class="bottom_text">
+                    <p>From ₹350</p>
+                    <button class="explore_btn">Explore</button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        
+     </div>
+ 
+    <!-- Footer -->
+     <footer>
+        <div class="contents">
+            <div>
+                <img src="logo.png" alt="Voyara" width="100px" height="35px" style="background-color: white; margin-top: 10px;">
+                <p>Making every trip unforgettable, one destination at a time</p>
+            </div>
+            <div>
+                <p class="foot_main">Quick links</p>
+                <a class="links" href="index.html">Home</a>
+                <a class="links" href="destination.html">Destinations</a>
+                <a class="links" href="blog.html">Blog</a>
+                <a class="links" href="contact_us.html">Contact us</a>
+                <a class="links" href="sign_up.html">Sign up</a>
+            </div>
+            <div>
+                <p class="foot_main">Support</p>
+                <p>FAQs</p>
+                <p>Booking terms</p>
+                <p>Cancellation policy</p>
+                <p>Privacy policy</p>
+            </div>
+            <div>
+                <p class="foot_main">Stay updated</p>
+                <p>Get travel deals in your inbox</p>
+                <p>hello@voyara.com</p>
+                <p>+91 9876543210</p>
+            </div>
+        </div>
+        <hr>
+        <div class="ending">
+            <div><p>© 2026 Voyara. All rights reserved.</p></div>
+            <div class="PTC">
+                <p>Privacy</p>
+                <p>Terms</p>
+                <p>Cookies</p>
+            </div>
+        </div>
+     </footer>
+ 
+</body>
+</html>
+ 

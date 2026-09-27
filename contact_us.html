@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyara</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("background_img.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+        }
+        
+        #explore {
+            color: #002D37;
+            border: 1px solid #002D37;
+            border-radius: 10px;
+        }
+
+        .hero_header {
+            width: 1300px;
+            text-align: center;
+            padding-bottom: 40px;
+            background-color: #002D37;
+            height: 300px;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            margin-top: 90px;   
+        }
+
+        .hero_header .big {
+            font-size: 60px;
+            font-style: oblique;
+            color: beige;
+        }
+
+        .hero_header .small {
+            font-size: 30px;
+            color: white;
+        }
+
+        form p {
+            display: inline-block;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        .submit_button {
+            color: #002D37;
+            border: 1px solid #002D37;
+            border-radius: 10px;
+            background-color: aliceblue;
+            padding: 6px 16px;
+        }
+        
+        .contact_title {
+            font-size: 30px;
+        }
+
+        .contact {
+            float: left;
+            border: 2px solid rgb(147, 142, 142);
+            border-radius: 25px;
+            padding: 30px;
+            width: 350px;
+            height: 450px;
+            background-color: blanchedalmond;
+            margin-left: 50px;
+        }
+
+        .map {
+            float: right;
+            height: 450px;
+        }
+
+        .contact_map {
+            height: 500px;
+        }
+
+        .direct {
+            margin-left: 50px;
+        }
+
+         @media (max-width: 480px) {
+            .hero_header {
+                width: 100%;
+            }
+
+            .contact_map {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-bottom: 500px;
+            }
+            .map {
+                width: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav_bar">
+            <div class="logo_name">
+                <img src="logo.png" alt="Voyara" width="100px" height="35px">
+            </div>
+            <div class="pages">
+                <a href="index.html">Home</a>
+                <a href="destination.html">Destinations</a>
+                <a href="contact_us.html">Contact Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="sign_up.html">Sign Up</a>
+                <a href="log_in.html" id="login">Log In</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+     <div class="hero_header">
+        <p class="big">Get in Touch</p>
+        <p class="small">Have questions about your next trip? We're here to help.</p>
+     </div>
+
+    <!-- Contact form -->
+     <div class="contact_map">
+        <div class="contact">
+            <p class="contact_title" style="text-decoration: underline; font-style: oblique;">Contact Us 📞: </p>
+            <form>
+                <p>Name: </p>
+                <label style="margin-right: 100px;" Name: ></label> <input type="text" name="name">
+                <br><br>
+                <p>Email: </p>
+                <label  style="margin-right: 100px;" Email: ></label> <input type="email" name="email_id">
+                <br><br>
+                <p>Phone Number: </p>
+                <label  style="margin-right: 44px;" Phone Number: ></label> <input type="number" name="phone">
+                <br><br>
+                <p>Message: </p>
+                <label  style="margin-right: 80px;" Message box: ></label> <textarea name="message" id="message"></textarea>
+                <br><br>
+                <input class="submit_button" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17640.62352978265!2d80.15723644472958!3d12.657327568296731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1789519273847!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+     </div>
+     
+
+     <div class="direct">
+        <p class="contact_title">Direct Contact Details: </p>
+        <p><span>Email address: </span> <a href="#">support@voyara.com</a></p>
+        <p><span>Phone Number: </span>+91 9876543210</p>
+        <p><span></span></p>
+     </div>
+     
+
+    <!-- Footer -->
+     <footer>
+        <div class="contents">
+            <div>
+                <img src="logo.png" alt="Voyara" width="100px" height="35px" style="background-color: white; margin-top: 10px;">
+                <p>Making every trip unforgettable, one destination at a time</p>
+            </div>
+            <div>
+                <p class="foot_main">Quick links</p>
+                <a class="links" href="index.html">Home</a>
+                <a class="links" class="links" href="destination.html">Destinations</a>
+                <a class="links" href="blog.html">Blog</a>
+                <a class="links" href="contact_us.html">Contact us</a>
+                <a class="links" href="sign_up.html">Sign up</a>
+            </div>
+            <div>
+                <p class="foot_main">Support</p>
+                <p>FAQs</p>
+                <p>Booking terms</p>
+                <p>Cancellation policy</p>
+                <p>Privacy policy</p>
+            </div>
+            <div>
+                <p class="foot_main">Stay updated</p>
+                <p>Get travel deals in your inbox</p>
+                <p>hello@voyara.com</p>
+                <p>+91 9876543210</p>
+            </div>
+        </div>
+        <hr>
+        <div class="ending">
+            <div><p>© 2026 Voyara.All rights reserved.</p></div>
+            <div class="PTC">
+                <p>Privacy</p>
+                <p>Terms</p>
+                <p>Cookies</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
